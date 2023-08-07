@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes text {
+    0%, 100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
+  .animate-text {
+    animation: text 3s ease infinite;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Adjust width and height as needed */
+    height: 100%;
+}
+
+.original-image,
+.hover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 3s ease;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: rotateY(180deg);
+}
+
+.image-container:hover .original-image {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+    transform: rotateY(0);
+}
