@@ -10,6 +10,11 @@ import contact from './components/contact.vue'
 <template>
 
 <navbar />
+
+
+
+
+
 <hero />
 
 <about />
@@ -18,7 +23,6 @@ import contact from './components/contact.vue'
 
 
 <contact  />
-
 
 
 

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @keyframes text {
     0%, 100% {
       background-size: 200% 200%;
@@ -23,29 +24,5 @@
     height: 100%;
 }
 
-.original-image,
-.hover-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 3s ease;
-}
 
-.hover-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    transform: rotateY(180deg);
-}
 
-.image-container:hover .original-image {
-    transform: rotateY(180deg);
-    opacity: 0;
-}
-
-.image-container:hover .hover-image {
-    opacity: 1;
-    transform: rotateY(0);
-}
