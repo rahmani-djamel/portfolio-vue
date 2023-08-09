@@ -1,5 +1,5 @@
 <template>
-  <section class=" dark:bg-gray-900 dark:text-white" >
+  <section class=" dark:bg-gray-900 dark:text-white" id="skills" >
 
   
   <div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -26,7 +26,7 @@
       v-for="(language, index) in languages"
       :key="index"
 
-      class="py-4 flex flex-col items-center dark:bg-gray-700 shadow-xl justify-center sm:justify-start gap-4 bg-gray-50 hover:bg-white dark:bg-darkPrimary hover:dark:bg-darkSecondary border rounded-sm border-gray-300 dark:border-neutral-700 transform origin-center md:origin-top group"
+      class="py-4 flex flex-col items-center dark:bg-gray-700  shadow-xl dark:hover:bg-gray-500 justify-center sm:justify-start gap-4 bg-gray-50 hover:bg-white dark:bg-darkPrimary hover:dark:bg-darkSecondary border rounded-sm border-gray-300 dark:border-neutral-700 transform origin-center md:origin-top group"
       style="opacity: 1; transform: none;"
   
       

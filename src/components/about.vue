@@ -1,6 +1,6 @@
 <template>
 
-        <section class="bg-white dark:bg-gray-900">
+        <section class="bg-white dark:bg-gray-900" id="about">
             <h1 class="text-4xl text-center font-extrabold dark:text-white">
                         About <span class="text-cyan-500">Me</span>  
                     </h1>
@@ -10,7 +10,7 @@
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none
              md:text-5xl xl:text-6xl dark:text-white">Who are <span class="text-cyan-400">Rahmani Djamel</span>  Abderrahmen</h1>
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl
-             dark:text-gray-400" id="about">
+             dark:text-gray-400" id="aboutt">
             </p>
 
         </div>
@@ -19,13 +19,15 @@
            
             <ol class="relative border-l border-gray-200 dark:border-gray-700">
       <li v-for="item in items" :key="item.id" class="mb-10 ml-6">
-        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+        <span data-aos="fade-up"
+        data-aos-duration="3000" class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
           <!-- Use the custom SVG path for the item -->
           <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" :fill="item.svgColor" viewBox="0 0 20 20">
             <path :d="item.svgPath"/>
           </svg>
         </span>
-        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">{{ item.title }}</h3>
+        <h3 data-aos="fade-left"
+        data-aos-duration="3000" class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">{{ item.title }}</h3>
         <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{{ item.releaseDate }}</time>
         <p class="text-base font-normal text-gray-500 dark:text-gray-400">{{ item.description }}</p>
       </li>
@@ -72,7 +74,7 @@
   // Use the onMounted hook to initialize TypeIt when the component is mounted
   onMounted(() => {
     // Initialize TypeIt with the appropriate selector and options
-    new TypeIt('#about', {
+    new TypeIt('#aboutt', {
       strings: descreption,
     }).go();
   });

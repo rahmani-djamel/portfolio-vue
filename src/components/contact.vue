@@ -1,5 +1,5 @@
 <template>
-    <section class="dark:bg-gray-900">
+    <section class="dark:bg-gray-900" id="contact">
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
 
@@ -9,8 +9,10 @@
     </div>
     <div class="grid gap-10 mx-auto lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-6" id="app">
     <div v-for="contact in contacts" :key="contact.id" class="flex flex-col items-center">
-      <img class="object-cover w-20 h-20 mb-2 rounded-full shadow" :src="contact.image" alt="contact" />
-      <div class="flex flex-col items-center">
+      <img class="object-cover w-20 h-20 mb-2 rounded-full shadow" :data-aos="contact.animation"
+      v-bind:data-aos-duration="contact.aosDuration" :src="contact.image" alt="contact" />
+      <div class="flex flex-col items-center" :data-aos="contact.animation"
+      v-bind:data-aos-duration="contact.aosDuration">
         <p class="text-lg font-bold dark:text-white">{{ contact.name }}</p>
         <p class="text-lg font-semibold  text-gray-800">
             <a  :href="contact.link" :class="contact.color">
@@ -39,7 +41,9 @@
               title: 'Call Now',
               image: whatsapp,
               link : 'https://wa.me/213656881308',
-              color : 'text-green-500'
+              color : 'text-green-500',
+              aosDuration: 300 * (1),
+              animation : 'zoom-out-left'
     },
     {
               id: 2,
@@ -47,7 +51,9 @@
               title: 'Call Now',
               image: telgram,
               link : 'https://t.me/leo_rd',
-              color : 'text-sky-600'
+              color : 'text-sky-600',
+              aosDuration: 300 * (2),
+              animation : 'zoom-out-left'
     },
     {
               id: 3,
@@ -55,7 +61,9 @@
               title: 'Contact Now',
               image: linkedin,
               link : 'https://t.me/leo_rd',
-              color : 'text-sky-700'
+              color : 'text-sky-700',
+              aosDuration: 300 * (3),
+              animation : 'zoom-out-left'
     },
     {
               id: 4,
@@ -63,7 +71,9 @@
               title: 'Contact Now',
               image: email,
               link : 'mailto:rahmanidja8@gmail.com',
-              color : 'text-amber-700'
+              color : 'text-amber-700',
+              aosDuration: 300 * (4),
+              animation : 'zoom-out-left'
     },
     {
               id: 5,
@@ -71,7 +81,9 @@
               title: 'Contact Now',
               image: instagram,
               link : 'https://www.instagram.com/rahmani_dja/',
-              color : 'text-pink-600'
+              color : 'text-pink-600',
+              aosDuration: 300 * (5),
+              animation : 'zoom-out-left'
     },
     {
               id: 5,
@@ -79,7 +91,9 @@
               title: 'Contact Now',
               image: facebook,
               link : 'https://www.facebook.com/rah.mani.7564/',
-              color : 'text-sky-700'
+              color : 'text-sky-700',
+              aosDuration: 300 * (10),
+              animation : 'zoom-out-left'
     },
   ]
 
