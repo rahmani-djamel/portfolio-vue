@@ -83,12 +83,21 @@ import darkLogoSrc from '@/assets/images/logo-dark.png';
 
 const isDarkMode = ref(false);
 
+// Check local storage for theme preference on page load
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  isDarkMode.value = true;
+  document.documentElement.classList.add('dark');
+}
+
 // Watch changes to the isDarkMode and update the class accordingly
 watch(isDarkMode, (newVal) => {
   if (newVal) {
     document.documentElement.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
   } else {
     document.documentElement.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
   }
 });
 
