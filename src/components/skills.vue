@@ -71,7 +71,7 @@ const languages = [
     name: 'CSS',
     icon: cssIcon,
     aosDuration: 2000,
-    animation : 'zoom-out-left'
+    animation : 'zoom-out-up'
   },
   {
     name: 'JavaScript',
@@ -89,7 +89,7 @@ const languages = [
     name: 'Laravel',
     icon: laravelIcon,
     aosDuration: 2000,
-    animation: 'fade-down-left'
+    animation: 'fade-out-up'
   },
   {
     name: 'PHP',
@@ -108,7 +108,7 @@ const languages = [
     name: 'Bootstrap',
     icon: bootstrapIcon,
     aosDuration: 2000,
-    animation: 'fade-left'
+    animation: 'fade-down'
   },
   {
     name: 'Tailwind CSS',
@@ -132,7 +132,7 @@ const languages = [
     name: 'PostgresSQL',
     icon: PostgresSQL,
     aosDuration: 2000,
-    animation: 'zoom-in-left'
+    animation: 'zoom-in-up'
   },
 
 ];

@@ -14,7 +14,7 @@
             </p>
 
         </div>
-        <div class=" lg:mt-0 lg:col-span-5 lg:flex mx-4 md:mx-0" data-aos="fade-left"
+        <div class=" lg:mt-0 lg:col-span-5 lg:flex mx-4 md:mx-0" data-aos="fade-up"
         data-aos-duration="3000">
            
             <ol class="relative border-l border-gray-200 dark:border-gray-700">
@@ -26,7 +26,7 @@
             <path :d="item.svgPath"/>
           </svg>
         </span>
-        <h3 data-aos="fade-left"
+        <h3 data-aos="fade-down"
         data-aos-duration="3000" class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">{{ item.title }}</h3>
         <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{{ item.releaseDate }}</time>
         <p class="text-base font-normal text-gray-500 dark:text-gray-400">{{ item.description }}</p>

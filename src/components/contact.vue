@@ -43,7 +43,7 @@
               link : 'https://wa.me/213656881308',
               color : 'text-green-500',
               aosDuration: 300 * (1),
-              animation : 'zoom-out-left'
+              animation : 'zoom-out-up'
     },
     {
               id: 2,
@@ -53,7 +53,6 @@
               link : 'https://t.me/leo_rd',
               color : 'text-sky-600',
               aosDuration: 300 * (2),
-              animation : 'zoom-out-left'
     },
     {
               id: 3,
@@ -63,7 +62,7 @@
               link : 'https://t.me/leo_rd',
               color : 'text-sky-700',
               aosDuration: 300 * (3),
-              animation : 'zoom-out-left'
+              animation : 'zoom-out-up'
     },
     {
               id: 4,
@@ -73,7 +72,7 @@
               link : 'mailto:rahmanidja8@gmail.com',
               color : 'text-amber-700',
               aosDuration: 300 * (4),
-              animation : 'zoom-out-left'
+              animation : 'zoom-out-up'
     },
     {
               id: 5,
@@ -83,7 +82,7 @@
               link : 'https://www.instagram.com/rahmani_dja/',
               color : 'text-pink-600',
               aosDuration: 300 * (5),
-              animation : 'zoom-out-left'
+              animation : 'zoom-out-up'
     },
     {
               id: 5,
@@ -93,7 +92,7 @@
               link : 'https://www.facebook.com/rah.mani.7564/',
               color : 'text-sky-700',
               aosDuration: 300 * (10),
-              animation : 'zoom-out-left'
+              animation : 'zoom-out-up'
     },
   ]
 
