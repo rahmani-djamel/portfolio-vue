@@ -5,6 +5,7 @@ import hero from './components/hero.vue';
 import about from './components/about.vue'
 import skills from './components/skills.vue'
 import contact from './components/contact.vue'
+import reviews from './components/reviews.vue'
 import LoadingScreen from './components/loading.vue'
 import { onMounted,ref } from 'vue';
 
@@ -33,6 +34,8 @@ onMounted(() => {
 <about />
 
 <skills />
+
+<reviews />
 
 
 <contact  />
