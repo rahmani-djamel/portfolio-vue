@@ -59,7 +59,7 @@
               name: 'Linkedin',
               title: 'Contact Now',
               image: linkedin,
-              link : 'https://t.me/leo_rd',
+              link : 'https://www.linkedin.com/in/rahmani-djamel-9419b3206/',
               color : 'text-sky-700',
               aosDuration: 300 * (3),
               animation : 'zoom-out-up'
