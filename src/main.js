@@ -1,4 +1,8 @@
 import './assets/main.css'
+
+import 'flowbite/dist/flowbite.js'
+
+
 //import 'animate.css';
 
 
