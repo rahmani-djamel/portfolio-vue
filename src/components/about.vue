@@ -42,7 +42,7 @@
   import { onMounted } from 'vue';
   import TypeIt from 'typeit';
 
-  let descreption = 'Im an accomplished web developer specializing in Laravel and Livewire, with extensive experience in PHP and a knack for harnessing the power of frontend libraries like Alpine and Vue.js. My passion lies in crafting dynamic and efficient web solutions that seamlessly marry functionality and aesthetics. With a keen eye for detail and a dedication to creating user-centric experiences, I bring a unique blend of technical prowess and creative flair to every project I undertake.'
+  let descreption = 'PHP Laravel developer and instructor of Computer Science at Midtown Middle School. I specialize in crafting cutting-edge web applications using Laravel framework, ensuring seamless user experiences. In the role of Computer Science teacher, I guide young minds in discovering the world of programming and technology, fostering a strong foundation for their future endeavors. Lets connect and collaborate to see how the power of PHP Laravel and educational passion can bring your ideas to life.'
   
   const items = [
   {
