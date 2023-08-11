@@ -78,8 +78,15 @@
 <script setup>
 import { ref, watch } from 'vue';
 
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
 import logoSrc from  '@/assets/images/logo2.png';
 import darkLogoSrc from '@/assets/images/logo-dark.png';
+
+onMounted(() => {
+    initFlowbite();
+})
 
 const isDarkMode = ref(false);
 

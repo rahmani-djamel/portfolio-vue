@@ -2,6 +2,9 @@ import './assets/main.css'
 
 import 'flowbite/dist/flowbite.js'
 
+import 'flowbite';
+
+
 
 //import 'animate.css';
 
